@@ -5,7 +5,7 @@ from score.models import Score
 
 class ScoreAdmin(admin.ModelAdmin):
     model = Score
-    list_display = 'user', 'score',  'last_check'
+    list_display = 'user_id', 'score',  'last_check'
 
 
 admin.site.register(Score, ScoreAdmin)
