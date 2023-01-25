@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class PacerConfig(AppConfig):
+class ScoreConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'pacer'
+    name = 'score'

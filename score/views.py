@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 
-from pacer.models import Score
+from score.models import Score
 
 
 def get_score(request, pk):
