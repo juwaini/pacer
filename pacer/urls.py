@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('get_score/<int:pk>', get_score, name='get-score'),
     path('get_score_divided/<int:pk>', get_score_divided, name='get-score'),
+    path('set_score/<int:pk>', set_score, name='set-score'),
 ]
