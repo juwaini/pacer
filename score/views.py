@@ -1,4 +1,5 @@
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 from score.models import Score
 
@@ -21,6 +22,7 @@ def get_score_divided(request, pk):
     return JsonResponse(r)
 
 
+@csrf_exempt
 def set_score(request, pk):
     try:
         data = Score.objects.get(user=pk)
