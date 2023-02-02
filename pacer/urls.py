@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from score.views import get_score, get_score_divided
+from score.views import get_score, get_score_divided, set_score
 
 urlpatterns = [
     path('admin/', admin.site.urls),
