@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from score.views import get_score
+from score.views import get_score, get_score_divided
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('get_score/<int:pk>', get_score, name='get-score'),
+    path('get_score_divided/<int:pk>', get_score_divided, name='get-score'),
 ]
